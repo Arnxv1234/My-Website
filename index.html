@@ -8,7 +8,7 @@
     </head>
     <body>
         <h1>Hello Everyone!</h1>
-        <img src="Images/IntroPic.jpg" style="width:500px;height:600px;" alt="Picture of me">
+        <img src="Images/IntroPic.jpg" width=500 height=600 alt="Picture of me">
         
         <h2>My name is Arnav Rahman, and this is my 4th year at Cal Poly Pomona and my second year as a computer science major.</h2>
         <h3><b>Get To Know Me:</b></h3>
@@ -41,64 +41,7 @@
             <li>Chicken Alfredo Pasta</li>
             <li>Chicken Curry and Rice</li>
             <li>Pepperoni Pizza</li>
-
-            <h3>Mini Quiz Break:</h3>
-            <div style='transform: scale(0.65); position: relative; top: -100px;'></div>
-            <h3> ____ is a programming language</h3>
-            <p>Choose an option below</p>
-            <hr />
-            <div id='block-11' style=' padding: 10px;'></div>
-            <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'></label>
-            <input type='radio' name='option' value='Java' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
-            Java</label>
-            <span id='result-11'></span>
-         </div>
-         <hr />
-
-         <div id='block-12' style=' padding: 10px;'></div>
-         <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'></label>
-         <input type='radio' name='option' value='Google' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;'/>
-         Google</label>
-         <span id='result-12'></span>
-      </div>
-      <hr />
-     <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: green; font-weight: 700;'>Submit</button>
-    </div>
-    <a id='showanswer1'></a>
-    <script>
-        //Function evaluates answer and displays result
-        function displayAnswer1() {
-    if (document.getElementById('option-11').checked) {
-     
-      document.getElementById('result-11').style.color = 'limegreen'
-      document.getElementById('result-11').innerHTML = 'Correct!'
-    }
-    if (document.getElementById('option-12').checked) {
-      
-      document.getElementById('result-12').style.color = 'red'
-      document.getElementById('result-12').innerHTML = 'Incorrect!'
-      showCorrectAnswer1()
-    }
-        }
-
-        // the functon displays the link to the correct answer
-  function showCorrectAnswer1() {
-    let showAnswer1 = document.createElement('p')
-
-    showAnswer1.style.position = 'relative'
-    showAnswer1.style.top = '-180px'
-    showAnswer1.style.fontSize = '1.75rem'
-    document.getElementById('showanswer1').appendChild(showAnswer1)
-    showAnswer1.addEventListener('click', () => {
-    
-
-      document.getElementById('result-11').innerHTML = 'Correct!'
-      document.getElementById('showanswer1').removeChild(showAnswer1)
-    })
-  }
-        
-    </script>
-
+         </ol>
         <h1>GOODBYE!</h1>
         
     </body>
